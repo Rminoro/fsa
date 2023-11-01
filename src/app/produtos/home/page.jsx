@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Calca (){
+export default function Home (){
 
   return (
     <div>
@@ -60,5 +60,4 @@ export default function Calca (){
       </div>
     </div>
   );
-};
-
+};   

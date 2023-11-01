@@ -15,3 +15,24 @@ export default function Tenis(){
         </div>
     )
 }
+// import Image from 'next/image'; // Importe o componente Image do Next.js em vez de usar a tag <img>
+// import Caua from '../../public/caua.png';
+// import Edu from '../../public/edu.png';
+// import Kaka from '../../public/kaka.png';
+// import Rafa from '../../public/rafa.png';
+// import Thiago from '../../public/thiago.png';
+// import styles from './css/style.module.css'; // Use módulos de estilo no Next.js
+
+// export default function Sobrenos() {
+//   return (
+//     <main>
+//       <div className={styles.integrantes}>
+//         <Image src={Caua} alt="img caua" />
+//         <Image src={Edu} alt="img edu" />
+//         <Image src={Kaka} alt="img kaique" />
+//         <Image src={Rafa} alt="img rafa" />
+//         <Image src={Thiago} alt="img thiago" />
+//       </div>
+//     </main>
+//   );
+// }
