@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import openCV from "../../../../public/img/openCV.jpg";
-// import Image from 'next/image';
-//import OpenCV from '../../../../public/img/OpenCV';
 import openCVexemplo from "../../../../public/img/openCVexemplo.jpg";
 // import styles from './stylesolicitar.module.css'; // Use módulos de estilo no Next.js
 
@@ -32,7 +30,7 @@ export default function solicitar() {
         </div>
 
         <div className/*={styles['imagem-haarcascade']}*/>
-          {/* <Image src="/img/openCVxemplo.jpg" alt="haarCascade" width={200} height={200}/>  */}
+          
           <Image src="/img/openCVexemplo.jpg" alt="haarCascade" width={200} height={200}/>
         </div>
       </div>

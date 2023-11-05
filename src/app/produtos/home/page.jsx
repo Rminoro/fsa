@@ -20,7 +20,15 @@ export default function Home (){
               buscando o melhor para todos os usuários, independente de faixa etária/conhecimento. Para isso, iremos utilizar
               métodos com fácil utilização e que atendam todas as necessidades.
             </p>
+
             <p id="containerBotao">
+            <Link href="/produtos/solicitar">
+           
+           <button style={{ backgroundColor: 'blue', color: 'white' }}>Solicitar</button>
+          
+
+          </Link> 
+           
               {/* <Link href="/solicitar" passHref>
                 <a className="botao">Realizar Chamado</a>
               </Link> */}
@@ -31,11 +39,10 @@ export default function Home (){
         <div id="containerObj">
           <p id="conteudoObj">Entenda um pouco mais sobre o projeto Porto Help</p>
 
-           <Link href="/produtos/objetivos" legacyBehavior>
-           <a>
-          <button>Objetivos</button>
-          </a>
-            {/* <a className="botaoObj">Objetivos</a> */}
+           <Link href="/produtos/objetivos">
+           
+          <button style={{ backgroundColor: 'blue', color: 'white' }}>Objetivos</button>
+          
           </Link> 
 
         </div>
