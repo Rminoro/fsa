@@ -30,9 +30,14 @@ export default function Home (){
 
         <div id="containerObj">
           <p id="conteudoObj">Entenda um pouco mais sobre o projeto Porto Help</p>
-          {/* <Link href="/objetivos" passHref>
-            <a className="botaoObj">Objetivos</a>
-          </Link> */}
+
+           <Link href="/produtos/objetivos" legacyBehavior>
+           <a>
+          <button>Objetivos</button>
+          </a>
+            {/* <a className="botaoObj">Objetivos</a> */}
+          </Link> 
+
         </div>
 
         <div id="containerVei">

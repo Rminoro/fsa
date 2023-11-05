@@ -6,13 +6,15 @@ export default function Cabecalho() {
   return (
     <header className='cabecalho'>
         <nav>
-          <Link href="/login">LOGIN</Link>
-          <Link href="/produtos/calca">CALCA</Link>
-          <Link href="/produtos/solicitar">SOLICITAR</Link>
-          <Link href="/produtos/meia">MEIA</Link>
-          <Link href="/produtos/tenis">TÊNIS</Link>
-          <Link href="/tabela/queijo">QUEIJOS</Link>
           <Link href="/produtos/home">Home</Link>
+          <Link href="/login">LOGIN</Link>
+          {/* <Link href="/produtos/calca">CALCA</Link> */}
+          <Link href="/produtos/solicitar">SOLICITAR</Link>
+          <Link href="/produtos/Chatbot">Chatbot</Link>
+          <Link href="/produtos/sobrenos">Sobre nós</Link>
+          {/* <Link href="/tabela/queijo">QUEIJOS</Link> */}
+          <Link href="/produtos/objetivos">Objetivos</Link>
+          
         </nav>
     </header>
   )

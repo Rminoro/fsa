@@ -1,0 +1,82 @@
+// import Image from "next/image";
+// import Link from "next/link";
+
+// export default function Meia(){
+//     return(
+//         <div>
+//             <h1>MEIA</h1>
+//             <div>
+//                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minus ullam in ut, excepturi vel. Reprehenderit optio hic rerum nihil doloribus. Quos ipsam expedita veritatis aspernatur quasi, magnam eius odit.</p>
+//                 <p><Link href="/">HOME</Link></p>
+//                 <figure>
+//                     <Image src="/img/socks-496×640.png" alt="Meia" width={246} height={320}/>
+//                 </figure>
+//             </div>
+//         </div>
+//     )
+// }
+// import styles from '../styles/Chatbot.module.css'; // Importe seu arquivo CSS ou estilize diretamente no JSX
+
+export default function Chatbot() {
+  return (
+    <div id="scrollableContainer" style={{ width: '100%', height: 'calc(100vh - 60px)', overflow: 'auto' }}>
+      <div>
+        <div >
+          <div >
+            <img src="/iconePortinho.png" alt="iconePortinho" />
+            <div >
+              <div >
+                <img src="/retangle2.png" alt="Retangulo fundo de texto" />
+                <p >
+                  Para isso, apresentamos a vocês o Portinho, nosso mascote virtual que será responsável pelo atendimento
+                  via Chatbot.
+                  <br />
+                  <br />
+                  Diga Olá pro Portinho!
+                </p>
+                <img  src="/iconePortinho.png" alt="Image" />
+              </div>
+            </div>
+
+            <img src="/retangle1.png" alt="Informaes" />
+
+            <div >
+              <div >
+                <div >
+                  <div >
+                    <img  src="/ellipse-1.png" alt="Ellipse" />
+                  </div>
+                  <div >Portinho</div>
+                  <img  src="/close.png" alt="Close" />
+                </div>
+                <div >
+                  <div  />
+                  <div>Digite sua mensagem...</div>
+                  <img  src="/emote.png" alt="Emote" />
+                  <img  src="/email-send.png" alt="Email send" />
+                  <img src="/attach.png" alt="Attach" />
+                  <img  src="/audio.png" alt="Audio" />
+                </div>
+                <div>
+                  <p >Olá! Sou o Portinho, o bot da Porto Help!</p>
+                </div>
+                <div >
+                  <p >No que posso te ajudar?</p>
+                </div>
+                <div >
+                  <div >Olá Portinho!</div>
+                </div>
+                <div >
+                  <p >Preciso de um guincho urgente</p>
+                </div>
+                <div >
+                  <p >Estou enviando um modal para você agora mesmo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
