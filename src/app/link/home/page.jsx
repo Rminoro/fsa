@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styleHome from '../../produtos/home/styleHome.css';
+import styleHome from '../../link/home/styleHome.css';
 import motorista from '../../../../public/img/motorista.png';
 import caminhao from '../../../../public/img/caminhao.png';
 
@@ -28,7 +28,7 @@ export default function Home (){
             </p>
 
             <p id="containerBotao">
-            <Link href="/produtos/solicitar">
+            <Link href="/link/solicitar">
            
              <button style={{ backgroundColor: 'blue', color: 'white' }}>Solicitar</button>
             </Link>           
@@ -39,7 +39,7 @@ export default function Home (){
         <div id="containerObj">
           <p id="conteudoObj">Entenda um pouco mais sobre o projeto Porto Help</p>
 
-           <Link href="/produtos/objetivos">
+           <Link href="/link/objetivos">
            
           <button style={{ backgroundColor: 'blue', color: 'white' }}>Objetivos</button>
           

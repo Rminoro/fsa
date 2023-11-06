@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import "./Cabecalho.scss";
 
 
@@ -6,12 +7,12 @@ export default function Cabecalho() {
   return (
     <header className='cabecalho'>
         <nav>
-          <Link href="/produtos/home">Home</Link>
+          <Link href="/link/home" >  Home </Link>
           <Link href="/login">LOGIN</Link>
-          <Link href="/produtos/solicitar">SOLICITAR</Link>
-          <Link href="/produtos/Chatbot">Chatbot</Link>
-          <Link href="/produtos/sobrenos">Sobre nós</Link>
-          <Link href="/produtos/objetivos">Objetivos</Link>
+          <Link href="/link/solicitar">SOLICITAR</Link>
+          <Link href="/link/Chatbot">Chatbot</Link>
+          <Link href="/link/sobrenos">Sobre nós</Link>
+          <Link href="/link/objetivos">Objetivos</Link>
           
         </nav>
     </header>
