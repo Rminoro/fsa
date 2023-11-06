@@ -1,5 +1,11 @@
-// import Image from "next/image";
-// import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
+import ellipse from "../../../../public/img/ellipse-1.png"
+import iconePortinho from "../../../../public/img/iconePortinho.png";
+
+
+
+
 // import styles from '../styles/Chatbot.module.css'; // Importe seu arquivo CSS ou estilize diretamente no JSX
 
 export default function Chatbot() {
@@ -9,6 +15,7 @@ export default function Chatbot() {
         <div >
           <div >
             <img src="/iconePortinho.png" alt="iconePortinho" />
+            <Image src="/img/iconePortinho.png" alt="iconePortinho" width={200} height={200} /> 
             <div >
               <div >
                 <img src="/retangle2.png" alt="Retangulo fundo de texto" />
@@ -19,7 +26,8 @@ export default function Chatbot() {
                   <br />
                   Diga Olá pro Portinho!
                 </p>
-                <img  src="/iconePortinho.png" alt="Image" />
+                {/* <img src="/iconePortinho.png" alt="Image" /> */}
+                {/* <Image src="/img/iconePortinho.png" alt="Portinho" width={200} height={200} /> */}
               </div>
             </div>
 
@@ -29,7 +37,8 @@ export default function Chatbot() {
               <div >
                 <div >
                   <div >
-                    <img  src="/ellipse-1.png" alt="Ellipse" />
+                  <Image src="/img/ellipse-1.png" alt="Ellipse" width={200} height={200} /> 
+                    {/* <img  src="/ellipse-1.png" alt="Ellipse" /> */}
                   </div>
                   <div >Portinho</div>
                   <img  src="/close.png" alt="Close" />

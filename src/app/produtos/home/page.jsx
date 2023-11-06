@@ -29,9 +29,7 @@ export default function Home (){
 
           </Link> 
            
-              {/* <Link href="/solicitar" passHref>
-                <a className="botao">Realizar Chamado</a>
-              </Link> */}
+            
             </p>
           </div>
         </div>
