@@ -38,11 +38,12 @@
     margin-right: 10px; 
 }
 
-.BotaoSobrenos{
-    padding: 10px 20px; 
-    background-color: #fff; 
+#BotaoSobrenos{
+    margin-bottom: 30px;
+    border-radius: 50px;
     color: #002890;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }

@@ -18,13 +18,14 @@
 #Container1 h1{
     font-size: 20px;
     text-align: center;
-    
+    font-family: "Fjalla One-Regular", Helvetica;
 
 }
 #Container1 h2{
     font-size: 15px;
     font-weight: 400;
     text-align: center;
+    font-family: "Fjalla One-Regular", Helvetica;
     
 }
 
@@ -70,7 +71,7 @@
     font-weight: 700;
     text-align: center;
     margin-top: 20px;
-    
+    font-family: "Fjalla One-Regular", Helvetica;
 
     
 }
@@ -81,7 +82,8 @@
     display: flex;
     word-wrap: break-word;
     padding-top: 0%;
-    align-content:flex-start
+    align-content:flex-start;
+    font-family: "Fjalla One-Regular", Helvetica;
 
 }
 
@@ -204,4 +206,13 @@
 #trailer{
     max-width: 15vw;
     max-height: 20vh;
+}
+.botao{
+    margin-bottom: 30px;
+    border-radius: 50px;
+    color: #002890;
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }

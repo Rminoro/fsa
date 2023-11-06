@@ -10,7 +10,7 @@ export default function Rodape() {
       <p className='conteudoFooter' >Quer saber mais sobre os Devs por trás do projeto? Clique no botão abaixo e confira</p>
       <div>
         <Link href="/link/sobrenos">
-        <button id="BotaoSobrenos"style={{ backgroundColor: 'blue', color: 'white' }}>Sobre nós</button>
+        <button id="BotaoSobrenos">Sobre nós</button>
         </Link>
       </div>
       <div id="sobreNosCont">

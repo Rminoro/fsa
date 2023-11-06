@@ -30,7 +30,7 @@ export default function Home (){
             <p id="containerBotao">
             <Link href="/link/solicitar">
            
-             <button style={{ backgroundColor: 'blue', color: 'white' }}>Solicitar</button>
+             <button className="botao">Solicitar</button>
             </Link>           
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Home (){
 
            <Link href="/link/objetivos">
            
-          <button style={{ backgroundColor: 'blue', color: 'white' }}>Objetivos</button>
+          <button className="botao" >Objetivos</button>
           
           </Link> 
 

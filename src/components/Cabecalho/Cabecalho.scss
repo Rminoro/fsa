@@ -1,25 +1,51 @@
 
-header{
-    background-color: #000000;
-    height: 80px;
+// header{
+//     background-color: #000000;
+//     height: 80px;
 
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        a{
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.5rem;
-            padding: 2% 0;
-            transition: ease-out 300ms;
+//     nav{
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         a{
+//             display: block;
+//             text-decoration: none;
+//             color: #fff;
+//             font-weight: bold;
+//             font-size: 1.5rem;
+//             padding: 2% 0;
+//             transition: ease-out 300ms;
 
-            &:hover{
-                background-color: #fff;
-                color: #000000;
-            }
-        }
-    }
+//             &:hover{
+//                 background-color: #fff;
+//                 color: #000000;
+//             }
+//         }
+//     }
+// }
+#menu{
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
+    font-size: 30px;
+    flex-shrink: 0;
+    background-color: #000040;
+    color:#FFF;
+    margin-right: 20px;
+    font-family: "Fjalla One-Regular", Helvetica;
+  }
+.componente{
+    
+    font-family: "Fjalla One-Regular", Helvetica;
+    padding: 32px;
+    font-size: 40px;
 }
+.componenteHome{
+    font-family: "Fjalla One-Regular", Helvetica;
+    padding: 32px;
+    font-size: 40px;
+    display: inline-flex;
+}
+
