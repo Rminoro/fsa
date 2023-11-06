@@ -1,19 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import styleFooter from '../Rodape/styleFooter.css';
 // import styles from './styleFooter.module.css';
 
 export default function Rodape() {
   return (
-    <footer >
-      <p >Entre em contato conosco</p>
-      <p >Quer saber mais sobre os Devs por trás do projeto? Clique no botão abaixo e confira</p>
+    <footer id="footerStyle" >
+      <p className='conteudoFooter'>Entre em contato conosco</p>
+      <p className='conteudoFooter' >Quer saber mais sobre os Devs por trás do projeto? Clique no botão abaixo e confira</p>
       <div>
-        
         <Link href="/produtos/sobrenos">
-        <button style={{ backgroundColor: 'blue', color: 'white' }}>Sobre nós</button>
+        <button id="BotaoSobrenos"style={{ backgroundColor: 'blue', color: 'white' }}>Sobre nós</button>
         </Link>
-       
-
       </div>
       <div id="sobreNosCont">
         <p>@Grupo ntc</p>
