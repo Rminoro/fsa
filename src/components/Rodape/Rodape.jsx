@@ -14,9 +14,9 @@ export default function Rodape() {
         </Link>
       </div>
       <div id="sobreNosCont">
-        <p>@Grupo ntc</p>
-        <p >grupontc1@gmail.com</p>
-        <p >(11)98716-6289</p>
+        <p className="infos">@Grupo ntc</p>
+        <p className="infos">grupontc1@gmail.com</p>
+        <p className="infos">(11)98716-6289</p>
       </div>
     </footer>
   );
