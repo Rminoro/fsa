@@ -6,8 +6,8 @@ import logoPortoHelp from "../../../public/img/logoPortoHelp.png"
 export default function Cabecalho() {
   return (
     <header id='menu'>
-        <nav>
-          <Link className="componenteHome" href="/link/home" >  <Image src="/img/logoPortoHelp.png" alt="home" width={100} height={100}></Image> </Link>
+        <nav id='bg'>
+          <Link className="componente" href="/link/home" >  <Image src="/img/logoPortoHelp.png" alt="home" width={200} height={200}></Image> </Link>
           <Link className="componente" href="/login">LOGIN</Link>
           <Link className="componente" href="/link/solicitar">Solicitar</Link>
           <Link className="componente" href="/link/Chatbot">Chatbot</Link>

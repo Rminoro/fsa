@@ -25,27 +25,35 @@
 // }
 #menu{
     width: 100vw;
+    height: auto;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     padding: 0 0 0 0;
-    font-size: 30px;
+    font-size: 20px;
     flex-shrink: 0;
     background-color: #000040;
     color:#FFF;
-    margin-right: 20px;
-    font-family: "Fjalla One-Regular", Helvetica;
+    margin-right: 10px;
+    // font-family: "Fjalla One-Regular", Helvetica;
+   
+    
   }
+#bg{
+    display:flex;
+    align-items: center;
+}
 .componente{
     
-    font-family: "Fjalla One-Regular", Helvetica;
-    padding: 32px;
-    font-size: 40px;
-}
-.componenteHome{
-    font-family: "Fjalla One-Regular", Helvetica;
-    padding: 32px;
-    font-size: 40px;
-    display: inline-flex;
+    // font-family: "Fjalla One-Regular", Helvetica;
+    padding: 15px;
+    font-size: 35px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10px;
+    
 }
 
