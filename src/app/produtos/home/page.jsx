@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import styleHome from '../../produtos/home/styleHome.css';
+import motorista from '../../../../public/img/motorista.png';
+import caminhao from '../../../../public/img/caminhao.png';
 
 export default function Home (){
 
@@ -11,6 +15,8 @@ export default function Home (){
             <h2 id="texto">
               Buscamos criar um layout simples interativo, mas sem deixar de lado um design atrativo e interessante.
             </h2>
+            <Image id="motorista" src="/img/motorista.png" alt="Motorista de caminhão" width={200} height={200}></Image>
+           {/* <Image src="/img/iconePortinho.png" alt="iconePortinho" width={200} height={200} />  */}
           </div>
 
           <div id="Container2">
@@ -24,12 +30,8 @@ export default function Home (){
             <p id="containerBotao">
             <Link href="/produtos/solicitar">
            
-           <button style={{ backgroundColor: 'blue', color: 'white' }}>Solicitar</button>
-          
-
-          </Link> 
-           
-            
+             <button style={{ backgroundColor: 'blue', color: 'white' }}>Solicitar</button>
+            </Link>           
             </p>
           </div>
         </div>
@@ -50,12 +52,15 @@ export default function Home (){
           <div id="veiculos">
             <div className="veiculo">
               <p>Caminhões</p>
+              <Image src="/img/caminhao.png" alt="caminhao" width={150} height={150} /> 
             </div>
             <div className="veiculo">
               <p>Ônibus</p>
+              <Image src="/img/onibus.png" alt="onibus" width={150} height={150}/>
             </div>
             <div className="veiculo">
               <p>Trailers</p>
+              <Image src="/img/trailer.png" alt="trailer" width={150} height={150}/>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
     margin-top: 10px;
     margin-bottom: 100px;
     /* background-image: url('../assets/caixa-2.png');  */
-    background-image: url('.././../../public/img/caixa-2.png');
+    background-image: url('../../../public/img/caixa-2.png');
     margin-left: 5px;
     text-align: center;
     height: 40vh;
@@ -33,9 +33,7 @@
     font-family: "Fjalla One-Regular", Helvetica;
     color:#fff
 }
-.infos{
 
-}
 .BotaoSobrenos{
     padding: 10px 20px; 
     background-color: #fff; 
