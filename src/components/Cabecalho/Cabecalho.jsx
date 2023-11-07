@@ -11,8 +11,8 @@ export default function Cabecalho() {
           <Link className="componente" href="/login">LOGIN</Link>
           <Link className="componente" href="/link/solicitar">Solicitar</Link>
           <Link className="componente" href="/link/Chatbot">Chatbot</Link>
-          <Link className="componente" href="/link/sobrenos">Sobre nós</Link>
           <Link className="componente" href="/link/objetivos">Objetivos</Link>
+          <Link className="componente" href="/link/sobrenos">Sobre nós</Link>
           
         </nav>
     </header>
