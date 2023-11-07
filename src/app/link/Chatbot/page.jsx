@@ -17,14 +17,17 @@ export default function Chatbot() {
       <div className="chatbot">
         <div className="chatbot-px">
           <div className="overlap">
-            <img src="/iconePortinho.png" alt="iconePortinho" />
+            
             <Image src="/img/iconePortinho.png" alt="iconePortinho" width={200} height={200} /> 
             <div className="apresentao-do">
+              <div className="tts-stt">
+                <p className="p-tts"> Nós da Porto Help oferecemos aos nossos clientes um Chatbot de simples utilização e que conta com 
+                  tecnologias de STT(Speech to Text) e TTS (Text to Speech), que possibilita um atendimento mais
+                  rápido e fácil, visando simplificar ao máximo o chamado do modal.
+                </p>
+
+              </div>
               <div className="overlap-group">
-                {/* <img src="/retangle2.png" alt="Retangulo fundo de texto" /> */}
-                {/* <Image id="motorista" src="/img/motorista.png" alt="Motorista de caminhão" width={200} height={200}></Image> */}
-                {/* <Image id="retangle2" src="/img/retangle2.png" alt="Retangulo fundo de texto" width={200} height={200}></Image> */}
-                {/* <Image id="retangle2" src="/img/retangle2.png" alt="Retangulo fundo de texto" width={200} height={200} /> */}
                 <p className="para-isso">
                   Para isso, apresentamos a vocês o Portinho, nosso mascote virtual que será responsável pelo atendimento
                   via Chatbot.
@@ -33,11 +36,11 @@ export default function Chatbot() {
                   Diga Olá pro Portinho!
                 </p>
                 {/* <img src="/iconePortinho.png" alt="Image" /> */}
-                {/* <Image src="/img/iconePortinho.png" alt="Portinho" width={200} height={200} /> */}
+                <Image className="image"src="/img/iconePortinho.png" alt="iconePortinho" width={200} height={200} /> 
               </div>
             </div>
 
-            <img src="/retangle1.png" alt="Informaes" />
+            {/* <img src="/retangle1.png" alt="Informaes" /> */}
 
             <div className="tela-chatbot" >
               <div className="div">
