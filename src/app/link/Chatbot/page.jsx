@@ -13,7 +13,7 @@ import close from "../../../../public/img/close.png";
 
 export default function Chatbot() {
   return (
-    <div id="scrollableContainer" style={{ width: '100%', height: 'calc(100vh - 60px)', overflow: 'auto' }}>
+    // <div id="scrollableContainer" style={{ width: '100%', height: 'calc(100vh - 60px)', overflow: 'auto' }}>
       <div className="chatbot">
         <div className="chatbot-px">
           <div className="overlap">
@@ -83,6 +83,6 @@ export default function Chatbot() {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }

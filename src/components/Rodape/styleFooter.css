@@ -11,11 +11,13 @@
     height: 40vh;
 }
 .conteudoFooter{
+    
     margin: 20px;
     text-align: center;
     padding: 10px;
     font-family: "Fjalla One-Regular", Helvetica;
     color:#fff
+    
 }
 .infos{
     display:inline-table;
