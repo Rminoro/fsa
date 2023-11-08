@@ -1,36 +1,31 @@
-"use client";
+"use client"
 import { useState } from "react";
+import "./style.css"; 
 
-export default function login() {
-
+export default function Login() {
   const [msg, setMsg] = useState("");
- 
+
   const [formData, setFormData] = useState({
     placa: "",
     cpf: "",
   });
 
- 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        "http://localhost:3000/api/base/base-user-api",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("http://localhost:3000/api/base/base-user-api", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         const result = await response.json();
@@ -53,10 +48,10 @@ export default function login() {
   };
 
   return (
-    <div>
-      <h1>LOGIN</h1>
+    <div id="div-login">
+      <h1 id="login">LOGIN</h1>
 
-      <h2 className="bg-red-300 text-red-700 text-center text-lg">{msg}</h2>
+      <h2 className="bg-white text-black text-center text-lg">{msg}</h2>
 
       <div className="form-registration">
         <form onSubmit={handleSubmit}>
@@ -85,7 +80,7 @@ export default function login() {
               />
             </div>
             <div>
-              <button>LOGIN</button>
+              <button id="botaoForms">LOGIN</button>
             </div>
           </fieldset>
         </form>

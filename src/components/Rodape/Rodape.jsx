@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import styleFooter from '../Rodape/styleFooter.css';
-// import styles from './styleFooter.module.css';
 
 export default function Rodape() {
   return (

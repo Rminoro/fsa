@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import style from "../solicitar/style.css";
-import openCV from "../../../../public/img/openCV.jpg";
-import openCVexemplo from "../../../../public/img/openCVexemplo.jpg";
+
 
 
 export default function solicitar() {

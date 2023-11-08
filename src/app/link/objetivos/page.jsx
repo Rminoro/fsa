@@ -3,7 +3,6 @@ import style from '../objetivos/style.css';
 
 export default function Objetivos() {
   return (
-    // <div id="scrollableContainer" style={{ width: '100%', height: 'calc(100vh - 60px)', overflow: 'auto' }}>
       <div className="objetivos">
         <div className="objetivos-px">
           <div className="overlap">
@@ -53,6 +52,6 @@ export default function Objetivos() {
           </div>
         </div>
       </div>
-    // </div>
+    
   );
 }

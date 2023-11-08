@@ -1,5 +1,6 @@
-"use client";
+"use client"
 import React, { useState } from 'react';
+import style from "../registro/style.css"
 
 export default function Register() {
   const [placa, setPlaca] = useState('');
@@ -8,7 +9,7 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     try {
-      // Enviar a solicitação de registro para o servidor Next.js (você precisa criar a rota correspondente no servidor)
+      
       const response = await fetch("/api/base/base-register", {
         method: 'POST',
         headers: {
@@ -31,31 +32,33 @@ export default function Register() {
   };
 
   return (
-    <div>
-      <h1>REGISTRO DE PLACA E CPF</h1>
-      {message && <p>{message}</p>}
-      <div>
-        <label htmlFor="placa">Placa:</label>
-        <input
-          type="text"
-          id="placa"
-          placeholder="Digite a placa do veículo"
-          value={placa}
-          onChange={(e) => setPlaca(e.target.value)}
-        />
-      </div>
-      <div>
-        <label htmlFor="cpf">CPF:</label>
-        <input
-          type="text"
-          id="cpf"
-          placeholder="Digite o CPF do proprietário"
-          value={cpf}
-          onChange={(e) => setCPF(e.target.value)}
-        />
-      </div>
-      <div>
-        <button onClick={handleSubmit}>REGISTRAR</button>
+    <div id="div-register"> 
+      <h1 id="register">REGISTRO DE PLACA E CPF</h1> 
+      {message && <p className="bg-white text-black text-center text-lg">{message}</p>}
+      <div className="form-registration"> 
+        <div>
+          <label htmlFor="placa">Placa:</label>
+          <input
+            type="text"
+            id="placa"
+            placeholder="Digite a placa do veículo"
+            value={placa}
+            onChange={(e) => setPlaca(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="cpf">CPF:</label>
+          <input
+            type="text"
+            id="cpf"
+            placeholder="Digite o CPF do proprietário"
+            value={cpf}
+            onChange={(e) => setCPF(e.target.value)}
+          />
+        </div>
+        <div>
+          <button id="botaoRegister" onClick={handleSubmit}>REGISTRAR</button>
+        </div>
       </div>
     </div>
   );

@@ -1,14 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styleHome from '../../link/home/styleHome.css';
-import motorista from '../../../../public/img/motorista.png';
-import caminhao from '../../../../public/img/caminhao.png';
+
 
 export default function Home (){
 
   return (
     <div>
-      <div id="scrollableContainer" style={{ width: '100%', height: '80vh', overflow: 'auto' }}>
+      
         <div id="superContainer">
           <div id="Container1">
             <h1 id="titulo">Com a Porto Help você pode mais!</h1>
@@ -16,7 +15,7 @@ export default function Home (){
               Buscamos criar um layout simples interativo, mas sem deixar de lado um design atrativo e interessante.
             </h2>
             <Image id="motorista" src="/img/motorista.png" alt="Motorista de caminhão" width={200} height={200}></Image>
-           {/* <Image src="/img/iconePortinho.png" alt="iconePortinho" width={200} height={200} />  */}
+      
           </div>
 
           <div id="Container2">
@@ -66,13 +65,13 @@ export default function Home (){
         </div>
 
         <div id="containerChatbot">
-          {/* Chatbot */}
+        
         </div>
 
         <div>
-          {/* Rodape */}
+          
         </div>
-      </div>
+    
     </div>
   );
 };   
