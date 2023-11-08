@@ -6,10 +6,10 @@ export default function Register() {
   const [cpf, setCPF] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
     try {
       // Enviar a solicitação de registro para o servidor Next.js (você precisa criar a rota correspondente no servidor)
-      const response = await fetch('http://localhost:3000/api/base/base-register-api', {
+      const response = await fetch("/api/base/base-register", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
