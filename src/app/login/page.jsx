@@ -1,24 +1,23 @@
 "use client";
 import { useState } from "react";
 
-export default function LoginUsers() {
-  //Mensage de STATUS!
+export default function login() {
+
   const [msg, setMsg] = useState("");
  
-  const [usuario, setUsuario] = useState({
-    email: "",
-    senha: "",
+  const [formData, setFormData] = useState({
+    placa: "",
+    cpf: "",
   });
 
-  //Preenchimento dos Campos!
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setUsuario({ ...usuario, [name]: value });
+    setFormData({ ...formData, [name]: value });
   };
 
-  //Envio das informações
+  
   const handleSubmit = async (e) => {
-
     e.preventDefault();
 
     try {
@@ -29,24 +28,23 @@ export default function LoginUsers() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(usuario),
+          body: JSON.stringify(formData),
         }
       );
 
       if (response.ok) {
         const result = await response.json();
         console.log("VALIDADO!!!!");
-        if (result.status == "ok") {
-            
-            setMsg("Login efetuado com Sucesso!!");
-            setTimeout(()=>{
-                setMsg("");
-            },5000);
-        }else{
-            setMsg("Login ou Senha incorretos!");
-            setTimeout(()=>{
-                setMsg("");
-            },5000);
+        if (result.status === "ok") {
+          setMsg("Login efetuado com Sucesso!!");
+          setTimeout(() => {
+            setMsg("");
+          }, 5000);
+        } else {
+          setMsg("Placa ou CPF incorretos!");
+          setTimeout(() => {
+            setMsg("");
+          }, 5000);
         }
       }
     } catch (error) {
@@ -56,33 +54,33 @@ export default function LoginUsers() {
 
   return (
     <div>
-      <h1>IDENTIFICAÇÃO DOS USUÁRIOS</h1>
+      <h1>LOGIN</h1>
 
-        <h2 className="bg-red-300 text-red-700 text-center text-lg">{msg}</h2>
+      <h2 className="bg-red-300 text-red-700 text-center text-lg">{msg}</h2>
 
-      <div className="form-login">
+      <div className="form-registration">
         <form onSubmit={handleSubmit}>
           <fieldset>
-            <legend>LOGIN</legend>
+            <legend></legend>
             <div>
-              <label htmlFor="idEmail">Email:</label>
+              <label htmlFor="idPlaca">Placa:</label>
               <input
-                type="email"
-                name="email"
-                id="idEmail"
-                placeholder="Digite seu email."
-                value={usuario.email}
+                type="text"
+                name="placa"
+                id="idPlaca"
+                placeholder="Digite a placa do veículo."
+                value={formData.placa}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="idSenha">Senha:</label>
+              <label htmlFor="idCPF">CPF:</label>
               <input
-                type="password"
-                name="senha"
-                id="idSenha"
-                placeholder="Digite sua senha."
-                value={usuario.senha}
+                type="text"
+                name="cpf"
+                id="idCPF"
+                placeholder="Digite o CPF do proprietário."
+                value={formData.cpf}
                 onChange={handleChange}
               />
             </div>
